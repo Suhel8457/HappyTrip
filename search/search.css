@@ -1,0 +1,549 @@
+/* Navbar */
+
+/* *:root {
+    margin: 0;
+    padding: 0;
+} */
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.291);
+    z-index: 99;
+}
+.navbar-brand {
+    position: relative;
+    margin-left: 0.3rem;
+}
+.nav-element {
+    font-size: 16px;
+}
+.subsection-nav {
+    display: flex;
+    margin-right: 1rem;
+}
+hr {
+    margin-top: 0%;
+    background-color: rgba(0, 0, 0, 0.291);
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    margin-top: 4rem;
+    margin-left: 0%;
+    bottom: 0;
+    left: 0;
+    /* padding: 0px 0px 0 0; Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 15rem;
+    z-index: 60;
+    font-size: 18px;
+    color: gray;
+}
+
+.container {
+    margin-left: 20rem;
+    display: flex;
+    margin-top: 4rem;
+}
+
+#adcard {
+    z-index: 0;
+    display: none;
+}
+
+.ripple {
+    color: gray;
+}
+
+body {
+    width: 100%;
+}
+.sidebar .active {
+    border-radius: 0px;
+    color: blue;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0px 0px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.side {
+    margin-left: -2%;
+}
+
+/* Advertisement */
+.ads {
+    margin-left: 0;
+    margin-right: 0%;
+}
+
+/* Content of Search */
+.data {
+    margin-left: 0%;
+}
+
+/* Passanger Info */
+.box-shadow {
+    margin: 2%;
+    border: 1px inset rgba(128, 128, 128, 0.198);
+    padding: 2%;
+    text-align: justify;
+}
+
+.passanger-submit {
+    width: 100%;
+}
+
+/* Search */
+.add {
+    margin-left: 10%;
+    float: right;
+}
+
+/* Coupons */
+.coupons {
+    display: none;
+}
+/* .coupons {
+    background: #dedede;
+    padding: 1rem;
+    margin-left: 0;
+}
+.coupon .kanan {
+    border-left: 1px dashed rgb(71, 71, 71);
+    width: 40% !important;
+    position: relative;
+}
+
+.coupon .kanan .info::after,
+.coupon .kanan .info::before {
+    border: 1px solid #dedede;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #dedede;
+    border-radius: 100%;
+}
+.coupon .kanan .info::before {
+    top: -10px;
+    left: -10px;
+}
+
+.coupon .kanan .info::after {
+    bottom: -10px;
+    left: -10px;
+}
+.coupon .time {
+    font-size: 1.6rem;
+} */
+
+.btn-primary {
+    background-color: orangered;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: red;
+    border: none;
+}
+
+.dates {
+    display: flex;
+    gap: 11rem;
+}
+
+#return {
+    display: none;
+}
+
+.passengerNumbers {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.popup {
+    position: absolute;
+    margin-top: auto;
+    bottom: 2rem;
+    width: 100%;
+    height: 5rem;
+    color: blue;
+    z-index: 99;
+}
+
+#adcard {
+    visibility: hidden;
+    top: 0.7rem;
+    margin-left: 5rem;
+    display: block;
+    left: 1rem;
+}
+
+.flightdisplay {
+    display: none;
+}
+
+.flight_container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-left: 1rem;
+    align-items: center;
+    margin: 1rem 0;
+}
+.cont1,
+.cont2,
+.cont3,
+.cont4 {
+    /* border: 1px solid black; */
+    font-size: 16px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.flight_header {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    height: 1.5rem;
+    border-left: 0;
+    border-top: 0;
+    background-color: white;
+    position: fixed;
+    left: 15rem;
+    z-index: 99;
+}
+.flight_header div {
+    width: 100%;
+    align-items: center;
+    display: grid;
+    font-weight: 600;
+}
+/* #fh1 {
+    width: 40%;
+    float: right;
+} */
+/* body {
+    overflow-x: hidden;
+} */
+#fh1 {
+    position: absolute;
+    left: 12rem;
+}
+#fh2 {
+    position: absolute;
+    left: 22rem;
+}
+#fh3 {
+    position: absolute;
+    left: 33rem;
+}
+#fh4 {
+    position: absolute;
+    left: 44.5rem;
+}
+
+#flight_header {
+    display: none;
+}
+
+.btn-book {
+    background-color: orange;
+    color: white;
+    border: none;
+    /* border: 5px solid white; */
+    /* border-radius: 5px; */
+}
+.btn-book,
+.btn-back {
+    font-weight: bold;
+}
+.btn-back {
+    background-color: rgba(255, 0, 0, 0.317);
+    color: white;
+    border: none;
+    /* border: 5px solid white; */
+    /* border-radius: 5px; */
+    margin-top: 1rem;
+}
+
+/* .form {
+    display: none;
+} */
+
+#alert {
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    display: none;
+    /* height: 1rem; */
+    /* border: 1px solid black; */
+    margin-top: 0;
+    padding: 0;
+}
+#alert2 {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.containernew {
+    display: none;
+}
+
+#flightdisplay {
+    margin-left: 0rem;
+}
+
+.form1,
+.form2,
+.form3 {
+    border-radius: 2px;
+}
+
+.passengerDetails {
+    display: none;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    /* border-bottom: 2px solid grey; */
+}
+.wrapper {
+    display: none;
+    position: relative;
+    background-color: #fff;
+    width: 500px;
+    padding: 25px;
+    /* margin: 25px auto 0; */
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    /* transform: translate(80%, 3%); */
+    margin-left: 9rem;
+    margin-bottom: 0;
+}
+
+.popup {
+    position: absolute;
+}
+.wrapper h2 {
+    background-color: #fcfcfc;
+    color: orangered;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px dotted #333;
+}
+h4 {
+    padding-bottom: 5px;
+    color: orangered;
+}
+.input-group {
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.input-box {
+    width: 100%;
+    margin-right: 12px;
+    position: relative;
+}
+.input-box:last-child {
+    margin-right: 0;
+}
+.name {
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 1px solid #00000033;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    border-radius: 3px;
+    color: #333;
+}
+.name:focus,
+.dob:focus {
+    -webkit-box-shadow: 0 0 2px 1px #7ed32180;
+    -moz-box-shadow: 0 0 2px 1px #7ed32180;
+    box-shadow: 0 0 2px 1px #7ed32180;
+    border: 1px solid orangered;
+}
+.input-box .icon {
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 2px 0 0 2px;
+    transition: 0.3s;
+    font-size: 20px;
+    pointer-events: none;
+    border: 1px solid #00000033;
+    border-right: none;
+}
+.name:focus + .icon {
+    background-color: orangered;
+    color: #fff;
+    border-right: 1px solid orangered;
+    border: none;
+    transition: 1s;
+}
+.dob {
+    width: 30%;
+    padding: 14px;
+    text-align: center;
+    background-color: #fcfcfc;
+    transition: 0.3s;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    border-radius: 3px;
+}
+.radio {
+    display: none;
+}
+.input-box label {
+    width: 50%;
+    padding: 13px;
+    background-color: #fcfcfc;
+    display: inline-block;
+    float: left;
+    text-align: center;
+    border: 1px solid #c0bfbf;
+}
+.input-box label:first-of-type {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-right: none;
+}
+.input-box label:last-of-type {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.radio:checked + label {
+    background-color: orangered;
+    color: #fff;
+    transition: 0.5s;
+}
+.input-box select {
+    display: inline-block;
+    width: 50%;
+    padding: 12px;
+    background-color: #fcfcfc;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #c0bfbf;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.input-box select:focus {
+    background-color: orangered;
+    color: #fff;
+    text-align: center;
+}
+button {
+    width: 100%;
+    background: transparent;
+    border: none;
+    background: orangered;
+    color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.35s ease;
+}
+button:hover {
+    cursor: pointer;
+    background: orange;
+}
+
+.popup {
+    position: fixed;
+    /* transform: translate(0%, 0%); */
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: rgba(51, 51, 51, 0.8);
+    z-index: 200;
+}
+
+.popup .popup_box {
+    width: 400px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+}
+
+.popup .popup_box img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup .popup_box h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup .popup_box button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #ffae00;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}

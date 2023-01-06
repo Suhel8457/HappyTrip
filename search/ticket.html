@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Ticket</title>
+    <style>
+        .layout .cross-section{
+            position: absolute;
+        }
+
+        .cross-section{
+            transform: translate(56.5%, -30%);
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .cross-section button::selection{
+            background-color: orange;
+        }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@800&family=Libre+Barcode+39+Extended&family=Londrina+Sketch&family=Mukta:wght@300&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #ffffff;font-family: 'Mukta', sans-serif;align-items: center;justify-content:center;">
+    <div class="layout" style="transform: translate(30%, 55%);position: relative;width: 800px;height: 250px;background: linear-gradient(to bottom, #ffd8b3 0%, #ffd8b3 100%);border-top-left-radius: 30px 30px;border-top-right-radius: 30px 30px;border-bottom-left-radius: 30px 30px;border-bottom-right-radius: 30px 30px;box-shadow: 2px 3px 0px rgba(183, 183, 183, 0.9); border: 2px solid rgb(169, 0, 0);">
+        <div class="header" style="min-height: 20%;background: linear-gradient(to bottom, #e97934 0%, #e97934 100%);border-top-left-radius: 30px 30px;border-top-right-radius: 30px 30px;display: flex;flex-wrap: wrap;align-items: center;color: white;">
+            <div class="boardingpass" style="margin-left: 150px;font-family: 'Ubuntu Condensed', sans-serif;font-size: 13px;transform: scale(1.0,1.5);">BOARDING PASS</div>
+            <div id="flightCompany" class="flightname" style="margin-left: 50px;font-family: 'Big Shoulders Inline Text', cursive;font-size: 30px;font-weight: bolder;transform: scale(0.9,1.5);">WORLD VECTOR AIRLINES</div>
+            <div class="icon" style="margin-left: 140px;">
+                <img src="https://cdn-icons-png.flaticon.com/512/4672/4672559.png" alt="Aleq" width="50px" height="50px">
+            </div>
+        </div>
+        <div class="details" style="min-height: 70%;padding-top: 20px;display: flex;flex-wrap: wrap;">
+            <div class="barcode" style="writing-mode: vertical-lr;min-width: 10%;float: left;font-family: 'Libre Barcode 39 Extended', cursive;font-size: 50px;transform: scale(1.5,0.5);">barc</div>
+            <div class="maininfo" style="min-width: 63%;">
+                <div class="passenger" style="display: flex;flex-wrap: wrap;">
+                    <div class="left" style="display: block;">
+                        <div class="name" style="margin-bottom: 20px;">
+                            <div id="passengerName" class="data" style="color: rgba(0, 0, 0, 0.612);">PADMANABHA SIMHA</div>
+                            <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;">NAME OF PASSENGER</div>
+                        </div>
+                        <div class="from" style="display: flex;flex-wrap: wrap;">
+                            <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: 5px;">FROM</div>
+                            <div id="fromCity" class="data" style="color: rgba(0, 0, 0, 0.612);margin-left: 10px;">DUBAI / DBI</div>
+                        </div>
+                        <div class="to" style="display: flex;flex-wrap: wrap;">
+                            <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: 5px;">TO</div>
+                            <div id="toCity" class="data" style="color: rgba(0, 0, 0, 0.612);margin-left: 10px;">BANGKOK / BKK</div>
+                        </div>
+                    </div>
+                    <div class="right" style="display: flex;flex-wrap: wrap;padding-left: 230px;">
+                        <div class="seating" style="display: block;margin-bottom: 20px;">
+                            <div class="seat">
+                                <div id="seatNumber" class="data" style="color: rgba(0, 0, 0, 0.612);">28A</div>
+                                <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;margin-bottom: 20px;">SEAT</div>
+                            </div>
+                            <div class="class">
+                                <div id="flightClass" class="data" style="color: rgba(0, 0, 0, 0.612);">M</div>
+                                <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;">CLASS</div>
+                            </div>
+                        </div>
+                        <div class="qr"><img src="https://cdn-icons-png.flaticon.com/512/241/241528.png" alt="Aleq" width="70px" height="70px" style="padding-left: 10px;"></div>
+                    </div>
+                </div>
+                <div class="departure" style="display: flex;flex-wrap: wrap;">
+                    <div class="flight" style="display: flex;flex-wrap: wrap;">
+                        <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: 5px;">FLIGHT NUMBER</div>
+                        <div id="flightNumber" class="data" style="color: rgba(0, 0, 0, 0.612);margin-left: 10px;margin-right: 15px;">BDC 1278</div>
+                    </div>
+                    <div class="flight" style="display: flex;flex-wrap: wrap;">
+                        <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: 5px;">DATE</div>
+                        <div id="flightDate" class="data"  style="color: rgba(0, 0, 0, 0.612);margin-left: 10px;margin-right: 15px;">19 SEPT 2022</div>
+                    </div>
+                    <div class="flight" style="display: flex;flex-wrap: wrap;">
+                        <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: 5px;">DEPARTURE TIME</div>
+                        <div id="flightTime" class="data" style="color: rgba(0, 0, 0, 0.612);margin-left: 10px;margin-right: 15px;">16:30</div>
+                    </div>
+                </div>
+            </div>
+            <div class="sectioninfo" style="min-width: 25%;display: flex;flex-wrap: wrap;">
+                <div class="left" style="display: block;">
+                    <div class="passenger">
+                        <div class="left">
+                            <div class="name">
+                                <div id="passengerName" class="data" style="color: rgba(0, 0, 0, 0.612);">PADMANABHA SIMHA</div>
+                                <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: -15px;">NAME OF PASSENGER</div>
+                            </div>
+                            <div class="flight" style="display: flex;flex-wrap: wrap;">
+                                <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: 5px;">FROM</div>
+                                <div id="fromCity" class="data" style="color: rgba(0, 0, 0, 0.612);margin-left: 10px;margin-right: 15px;">DUBAI / DBI</div>
+                            </div>
+                            <div class="flight" style="display: flex;flex-wrap: wrap;">
+                                <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: 5px;">TO</div>
+                                <div id="toCity" class="data" style="color: rgba(0, 0, 0, 0.612);margin-left: 10px;margin-right: 15px;">BANGKOK / BKK</div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="departure" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: 5px;">
+                        <div class="flight" style="display: flex;flex-wrap: wrap;">
+                            <div class="category">FLIGHT NUMBER</div>
+                            <div id="flightNumber" class="data" style="color: rgba(0, 0, 0, 0.612);font-size: 15px;margin-left: 10px;margin-right: 15px;">BDC 1278</div>
+                        </div>
+                        <div class="flight" style="display: flex;flex-wrap: wrap;">
+                            <div id="flightDate" class="data" style="color: rgba(0, 0, 0, 0.612);font-size: 15px;margin-left: 10px;margin-right: 15px;">19 SEPT 2022</div>
+                            <div id="flightTime" class="data" style="color: rgba(0, 0, 0, 0.612);font-size: 15px;margin-left: 10px;margin-right: 15px;">16:30</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right" style="margin-left: 25px;">
+                    <div class="class">
+                        <div id="seatNumber" class="data" style="color: rgba(0, 0, 0, 0.612);margin-top: 20px;">28A</div>
+                        <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: -15px;">SEAT</div>
+                    </div>
+                    <div class="class">
+                        <div id="flightClass" class="data" style="color: rgba(0, 0, 0, 0.612);margin-top: 20px;">M</div>
+                        <div class="category" style="color: rgb(188, 107, 0);font-size: 10px;padding-top: -15px;">CLASS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" style="min-height: 10%;margin-top: -37px;background: linear-gradient(to bottom, #e97934 0%, #e97934 100%);border-bottom-left-radius: 30px 30px;border-bottom-right-radius: 30px 30px;font-family: 'Ubuntu Condensed', sans-serif;align-items: center;color: whitesmoke;padding-left: 615px;font-size: 9px;padding-top: 7px;transform: scale(1.0,1.0);">GATE CLOSES 30 MINUTES BEFORE DEPARTURE</div>
+    </div>
+    <div class="cross-section" style="transform: translate(45rem, -30%);color: rgba(0, 0, 0, 0.8);max-width: fit-content;">
+        <pre>
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+            '
+        </pre>
+        <div class="button" style="max-width: 40%; margin-top:5rem; margin-left: 15rem; border-radius:10px;">
+            <button onclick="" style="background-color: rgb(255, 255, 255); min-width: 7rem; min-height:2rem; border-radius:10px; color: #000000;">Next >></button>
+        </div>
+    </div>
+
+    <script>
+        //id=flightNumber,flightDate,flightTime,passengerName,flightCompany,flightClass,seatNumber,toCity,fromCity
+    </script>
+
+</body>
+</html>
